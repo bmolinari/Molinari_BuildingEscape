@@ -26,4 +26,12 @@ private:
 	UPROPERTY(EditAnywhere)
 	float Reach = 100.f;
 
+	UPhysicsHandleComponent* PhysicsHandle = nullptr;
+	UInputComponent* InputComponent = nullptr;
+
+	// Ray-Cast and grab object in reach
+	void Grab();
+
+	// Release the currently grabbed object
+	void Release();
 };
