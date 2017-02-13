@@ -37,7 +37,8 @@ private:
 	UPROPERTY(EditAnywhere)
 	float LastDoorOpenTime;
 
-	AActor* ActorThatOpens;
+	float GetTotalMassOnPlate();
+
 	AActor* Owner;
 
 };
