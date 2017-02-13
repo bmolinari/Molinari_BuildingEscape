@@ -35,9 +35,17 @@ private:
 	// Release the currently grabbed object
 	void Release();
 
+	// Finds the Physics Handle component, displays error if component is missing
 	void FindPhysicsHandleComponent();
 	
+	// Sets up the Input Component, displays an error if input component is missing
 	void SetupInputComponent();
+
+	// Get the current start of the reach line
+	FVector GetReachLineStart();
+	
+	// Get the current end point of the reach line
+	FVector GetReachLineEnd();
 
 	// Return hit for first physics body in reach
 	const FHitResult GetFirstPhysicsBodyInReach();
